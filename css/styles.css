@@ -1,0 +1,104 @@
+:root {
+  --dark-bg: #1a1a1a;
+  --purple-accent: #8a2be2;
+  --text-light: #ffffff;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(45deg, #8a2be2, #ff00ff);
+  }
+  50% {
+    background: linear-gradient(45deg, #ff00ff, #8a2be2);
+  }
+  100% {
+    background: linear-gradient(45deg, #8a2be2, #ff00ff);
+  }
+}
+
+.navbar {
+  animation: gradientAnimation 30s ease infinite;
+}
+
+.navbar-dark .navbar-brand, .nav-link:hover, .btn-purple {
+  color: var(--text-light) !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.dark-theme {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+/* Improved button appearance */
+.navbar-nav .nav-link {
+  color: white !important; /* Make sure links are white */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Add shadow for contrast */
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--purple-accent) !important; /* Purple color on hover */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Enhance hover effect */
+}
+
+.btn-purple {
+  background-color: var(--purple-accent);
+  border: none;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Add shadow to button text */
+}
+
+.btn-purple:hover {
+  background-color: #7a1bbd; /* Slightly darker purple on hover */
+  color: white; /* Keep text white */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Enhance hover effect */
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080');
+  background-size: cover;
+  padding-top: 60px;
+}
+
+.table-dark {
+  background-color: var(--dark-bg);
+}
+
+.form-control.bg-dark {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+.navbar-brand img {
+  width: 40px;
+  height: auto;
+}
+
+#projects {
+  margin-top: 100px;
+}
+
+#skills {
+  margin-top: 100px;
+}
+
+/* Ensures the footer stays at the bottom of the page */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
